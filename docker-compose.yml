@@ -9,5 +9,5 @@ services:
     volumes:
       - ./vw-data:/data
     environment:
-      - WEBSOCKET_ENABLED: 'true'
-      - SIGNUPS_ALLOWED: 'true'
+        WEBSOCKET_ENABLED: 'true'
+        SIGNUPS_ALLOWED: 'true'
