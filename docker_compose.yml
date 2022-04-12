@@ -1,0 +1,13 @@
+version: '3.9'
+
+services:
+  bitwarden:
+    image: vaultwarden/server
+    restart: always
+    ports:
+      - 8079:80
+    volumes:
+      - ./vw-data:/data
+    environment:
+      - WEBSOCKET_ENABLED: 'true'
+      - SIGNUPS_ALLOWED: 'true'
